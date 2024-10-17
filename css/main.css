@@ -1,0 +1,147 @@
+/* Fonts */
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Layout */
+body {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bg-orange {
+  background-color: #D95C21;
+}
+
+.text-orange {
+  color: #D95C21;
+}
+
+.header .logo img {
+  width: 300px;
+}
+
+.header .links {
+  margin-top: 70px;;
+}
+
+.header .nav-link {
+  padding: 20px;
+  text-decoration: none;
+  color: #D95C21;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.header .nav-link.active {
+  background-color: #D95C21;
+  color: #fff;
+  border-radius: 0;
+}
+
+.footer {
+  background-color: #D95C21;
+  color: #fff;
+  padding: 20px 0;
+}
+
+h1, h2, h3 {
+  color: #D95C21;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #D95C21;
+  border-radius: 0;
+  border: none;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background-color: #D95C21;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.big-title {
+  font-size: 72px;
+}
+
+.big-title-description {
+  margin: 20px 0;
+}
+
+.service-thumb img {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.service-title {
+  margin: 20px 0;
+}
+
+.service-description {
+  color: #D95C21;
+  font-size: 20px;
+}
