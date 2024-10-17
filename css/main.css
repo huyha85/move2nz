@@ -74,16 +74,21 @@ body {
   color: #D95C21;
 }
 
+.header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .header .logo img {
   width: 300px;
 }
 
 .header .links {
-  margin-top: 70px;;
+  margin-top: 30px;;
 }
 
 .header .nav-link {
-  padding: 20px;
+  padding: 20px 30px;
   text-decoration: none;
   color: #D95C21;
   font-size: 22px;
@@ -144,4 +149,18 @@ h1, h2, h3 {
 .service-description {
   color: #D95C21;
   font-size: 20px;
+}
+
+/* Mobile */
+@media (max-width: 991.98px) {
+  .logo, .links {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .header .nav-link.active {
+    background: none;
+    color: #D95C21;
+    border-bottom: 3px solid #D95C21;
+  }
 }
