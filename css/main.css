@@ -146,9 +146,23 @@ h1, h2, h3 {
   margin: 20px 0;
 }
 
-.service-description {
+.para-text {
+  /* color: #D95C21; */
+  font-size: 18px;
+}
+
+.reverse-section {
+  background-color: #D95C21;
+  color: #fff;
+}
+
+.reverse-section h1, .reverse-section h2 {
+  color: #fff;
+}
+
+.reverse-section .btn-primary, .reverse-section .btn-primary:active, .reverse-section .btn-primary:focus {
+  background-color: #fff;
   color: #D95C21;
-  font-size: 20px;
 }
 
 /* Mobile */
