@@ -163,4 +163,16 @@ h1, h2, h3 {
     color: #D95C21;
     border-bottom: 3px solid #D95C21;
   }
+
+  .header .nav-link {
+    padding: 20px;
+  }
+
+  .big-title {
+    font-size: 48px;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
 }
