@@ -177,14 +177,6 @@
     window.addEventListener('load', onLoad);
 
     function onLoad () {
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        var zaloLinks = document.getElementsByClassName("link-zalo");
-
-        for(var i = (zaloLinks.length - 1); i >= 0; i--)
-        {
-          zaloLinks[i].href = "https://zalo.me/+64273679586";
-        }
-      }
       const copyrightEl = document.getElementById('copyrightText');
 
       if (copyrightEl) {
