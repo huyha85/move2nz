@@ -18,19 +18,16 @@
             <img src="images/logo.png" alt="Move2NZ Logo">
           </a>
         </div>
-        <div class="links lato-light col-lg-6 col-12">
+        <!-- <div class="links lato-light col-lg-6 col-12">
           <ul class="nav nav-pills justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="/contact">Contact</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -40,7 +37,7 @@
         <div class="col-12 text-center">
           <h1 class="big-title lato-bold">Immigration and Beyond</h1>
           <h3 class="big-title-description lato-light">Expert Solutions for Your Move to New Zealand</h3>
-          <a class="btn btn-primary" href="#">Contact Us Now</a>
+          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -80,7 +77,7 @@
         <div class="col-12 text-center">
           <h1 class="big-title lato-bold">Keen to move?</h1>
           <h3 class="big-title-description lato-light">Find out all your options to migrate to New Zealand</h1>
-          <a class="btn btn-primary" href="#">Contact Us Now</a>
+          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -105,7 +102,7 @@
           <p class="para-text">New Zealand Passport Application Support, NZ Police Certificate Assistance, New Zealand Company Registration and others.</p>
         </div>
         <div class="col-12 text-center">
-          <a class="btn btn-primary" href="/services">Find out more</a>
+          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -116,8 +113,8 @@
       <div class="row">
         <div class="col-12 text-center">
           <h1 class="lato-bold">Keep in touch</h1>
-          <p class="para-text">Are you ready to begin your immigration journey? Reach out to Move2NZ for expert advice and comprehensive support. Contact us today or click the button below to schedule a consultation.</p>
-          <a class="btn btn-primary" href="#">Schedule a consultation</a>
+          <p class="para-text">Are you ready to begin your immigration journey? Reach out to Move2NZ for expert advice and comprehensive support. Contact us today for a consultation.</p>
+          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -126,17 +123,51 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="copyright col-9">
-          &copy; 2024 by Move2NZ Ltd. All Rights Reserved.
+        <div class="contact col-3">
+          <h5>Chat Now</h5>
+          <a class="link-zalo link" href="https://chat.zalo.me/?phone=+64273679586">
+            <img src="images/zalo_qr.jpg" width="100">
+          </a>
         </div>
-        <div class="media col-3 d-flex justify-content-end">
-          <i class="fa-brands fa-facebook-f"></i>
-          &nbsp;&nbsp;&nbsp;
-          <i class="fa-brands fa-instagram"></i>
-          &nbsp;&nbsp;&nbsp;
-          <i class="fa-brands fa-twitter"></i>
+        <div class="contact col-3">
+          <h5>Call Us</h5>
+          <h5>
+            <a class="link link-phone" href="tel:+64221209565">+64 22 120 9565</a>
+          </h5>
+        </div>
+        <div class="media col-6 d-flex justify-content-end">
+          <h5>
+            <a class="link" href="https://www.facebook.com/profile.php?id=61566206632655">
+              <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;Click to Follow Us on Facebook
+            </a>
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="copyright col-12 text-center">
+          &copy; <span id='copyrightText'>2024</span> by Move2NZ Ltd. All Rights Reserved.
         </div>
       </div>
     </div>
   </div>
+  <script>
+    window.addEventListener('load', onLoad);
+
+    function onLoad () {
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var zaloLinks = document.getElementsByClassName("link-zalo");
+
+        for(var i = (zaloLinks.length - 1); i >= 0; i--)
+        {
+          zaloLinks[i].href = "https://zalo.me/+64273679586";
+        }
+      }
+      const copyrightEl = document.getElementById('copyrightText');
+
+      if (copyrightEl) {
+        const currentYear = new Date().getFullYear();
+        copyrightEl.innerHTML = `${currentYear}`;
+      }
+    }
+  </script>
 </body>
