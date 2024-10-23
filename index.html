@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Move2NZ Solutions - New Zealand Immigration Services and much more</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,22 +18,18 @@
 <body>
   <div class="header">
     <div class="container">
-      <div class="row">
-        <div class="logo col-lg-6 col-12">
+      <div class="row justify-content-end">
+        <div class="logo col-lg-9 col-12">
           <a href="/">
             <img src="images/logo.png" alt="Move2NZ Logo">
           </a>
         </div>
-        <!-- <div class="links lato-light col-lg-6 col-12">
-          <ul class="nav nav-pills justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-          </ul>
-        </div> -->
+        <div class="links lato-light col-lg-3 col-4">
+          <select id="languageSelect" class="form-select" aria-label="Select Language">
+            <option value="en" selected>English</option>
+            <option value="vi">Tiếng Việt</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
@@ -39,9 +37,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="big-title lato-bold">Immigration and Beyond</h1>
-          <h3 class="big-title-description lato-light">Expert Solutions for Your Move to New Zealand</h3>
-          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+          <h1 id="immigration" class="big-title lato-bold">Immigration and Beyond</h1>
+          <h3 id="immigration_desc" class="big-title-description lato-light">Expert Solutions for Your Move to New Zealand</h3>
+          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -51,32 +49,32 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="big-title lato-bold">Our Services</h1>
-          <h3 class="big-title-description lato-light">Explore our wide range of services</h3>
+          <h1 id="our_services" class="big-title lato-bold">Our Services</h1>
+          <h3 id="explore_services" class="big-title-description lato-light">Explore our wide range of services</h3>
         </div>
         <div class="col-12 col-lg-4 text-center">
           <div class="service-thumb">
             <img src="images/service-nz.jpeg" alt="New Zealand Visas">
           </div>
-          <h2 class="service-title">New Zealand Visas</h2>
-          <p class="para-text">From student visas to work visas, resident visas, and beyond, we assist with all types of New Zealand visa applications. Our immigration advisors ensure that your application is processed efficiently and correctly, increasing your chances of success.</p>
+          <h2 id="new_zealand_visas" class="service-title">New Zealand Visas</h2>
+          <p id="nz_visas_desc" class="para-text">From student visas to work visas, resident visas, and beyond, we assist with all types of New Zealand visa applications. Our immigration advisors ensure that your application is processed efficiently and correctly, increasing your chances of success.</p>
         </div>
         <div class="col-12 col-lg-4 text-center">
           <div class="service-thumb">
             <img src="images/service-aus.jpeg" alt="Australia Visitor Visa">
           </div>
-          <h2 class="service-title">Visitor Visas to Australia</h2>
-          <p class="para-text">Planning a visit to Australia? We offer reliable support in securing your Australian visitor visa, making your travel experience hassle-free.</p>
+          <h2 id="visitor_visas" class="service-title">Visitor Visas to Australia</h2>
+          <p id="visitor_desc" class="para-text">Planning a visit to Australia? We offer reliable support in securing your Australian visitor visa, making your travel experience hassle-free.</p>
         </div>
         <div class="col-12 col-lg-4 text-center">
           <div class="service-thumb">
             <img src="images/service-other.jpeg" alt="New Zealand Passport, Police Certificate, Company Registration">
           </div>
-          <h2 class="service-title">Other Services</h2>
-          <p class="para-text">New Zealand Passport Application Support, NZ Police Certificate Assistance, New Zealand Company Registration and others.</p>
+          <h2 id="other_services" class="service-title">Other Services</h2>
+          <p id="other_services_desc" class="para-text">New Zealand Passport Application Support, NZ Police Certificate Assistance, New Zealand Company Registration and others.</p>
         </div>
         <div class="col-12 text-center">
-          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -86,9 +84,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="big-title lato-bold">Keen to move?</h1>
-          <h3 class="big-title-description lato-light">Find out all your options to migrate to New Zealand</h1>
-          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+          <h1 id="keen_to_move" class="big-title lato-bold">Keen to move?</h1>
+          <h3 id="keen_to_move_desc" class="big-title-description lato-light">Find out all your options to migrate to New Zealand</h1>
+          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -98,29 +96,29 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="big-title lato-bold">Why Choose Us?</h1>
-          <h3 class="big-title-description lato-light">Experienced consultants with tracked proven records</h3>
+          <h1 id="why_choose_us" class="big-title lato-bold">Why Choose Us?</h1>
+          <h3 id="choose_us_desc" class="big-title-description lato-light">Experienced consultants with tracked proven records</h3>
         </div>
         <div class="col-12 col-lg-4 text-center">
           <div class="service-thumb">
             <img src="images/consult.jpeg" alt="Experienced Consultants">
           </div>
-          <h2 class="service-title">Experienced Consultants</h2>
-          <p class="para-text">Our knowledgeable team has years of experience in New Zealand immigration and processes</p>
+          <h2 id="experience-consultants" class="service-title">Experienced Consultants</h2>
+          <p id="experience-consultants-desc" class="para-text">Our knowledgeable team has years of experience in New Zealand immigration and processes</p>
         </div>
         <div class="col-12 col-lg-4 text-center">
           <div class="service-thumb">
             <img src="images/support.jpeg" alt="Personalised Support">
           </div>
-          <h2 class="service-title">Personalised Support</h2>
-          <p class="para-text">We understand that every situation is unique. We offer tailored solutions based on your specific needs</p>
+          <h2 id="personalised-support" class="service-title">Personalised Support</h2>
+          <p id="personalised-support-desc" class="para-text">We understand that every situation is unique. We offer tailored solutions based on your specific needs</p>
         </div>
         <div class="col-12 col-lg-4 text-center">
           <div class="service-thumb">
             <img src="images/trust.jpeg" alt="Trusted Partnership">
           </div>
-          <h2 class="service-title">Trusted Partnership</h2>
-          <p class="para-text">We believe in building strong, long-term relationships with our clients</p>
+          <h2 id="trusted-partnership" class="service-title">Trusted Partnership</h2>
+          <p id="trusted-partnership-desc" class="para-text">We believe in building strong, long-term relationships with our clients</p>
         </div>
       </div>
     </div>
@@ -130,9 +128,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="big-title lato-bold">Keep in touch</h1>
-          <p class="para-text">Are you ready to begin your immigration journey? Contact us today for a consultation.</p>
-          <a class="btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+          <h1 id="keep_in_touch" class="big-title lato-bold">Keep in touch</h1>
+          <p id="ready_to_begin" class="para-text">Are you ready to begin your immigration journey? Contact us today for a consultation.</p>
+          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -167,22 +165,122 @@
         </div>
       </div>
       <div class="row">
-        <div class="copyright col-12 text-center">
-          &copy; <span id='copyrightText'>2024</span> by Move2NZ Ltd. All Rights Reserved.
+        <div id='copyrightText' class="copyright col-12 text-center">
+          &copy; 2024 Move2NZ Solutions Ltd. All Rights Reserved.
         </div>
       </div>
     </div>
   </div>
   <script>
-    window.addEventListener('load', onLoad);
-
-    function onLoad () {
-      const copyrightEl = document.getElementById('copyrightText');
-
-      if (copyrightEl) {
-        const currentYear = new Date().getFullYear();
-        copyrightEl.innerHTML = `${currentYear}`;
+    // Embedded JSON data
+    const langData = {
+      "en": {
+        "title": "Move2NZ Solutions - New Zealand Immigration Services and much more",
+        "description": "New Zealand visa services, Australia visitor visa, immigration advisor",
+        "elements": {
+          "immigration": "Immigration and Beyond",
+          "immigration_desc": "Expert Solutions for Your Move to New Zealand",
+          "our_services": "Our Services",
+          "explore_services": "Explore our wide range of services",
+          "new_zealand_visas": "New Zealand Visas",
+          "nz_visas_desc": "From student visas to work visas, resident visas, and beyond, we assist with all types of New Zealand visa applications. Our immigration advisors ensure that your application is processed efficiently and correctly, increasing your chances of success.",
+          "visitor_visas": "Visitor Visas to Australia",
+          "visitor_desc": "Planning a visit to Australia? We offer reliable support in securing your Australian visitor visa, making your travel experience hassle-free.",
+          "other_services": "Other Services",
+          "other_services_desc": "New Zealand Passport Application Support, NZ Police Certificate Assistance, New Zealand Company Registration and others.",
+          "keen_to_move": "Keen to move?",
+          "keen_to_move_desc": "Find out all your options to migrate to New Zealand",
+          "why_choose_us": "Why Choose Us?",
+          "choose_us_desc": "Experienced consultants with tracked proven records",
+          "experience-consultants": "Experienced Consultants",
+          "experience-consultants-desc": "Our knowledgeable team has years of experience in New Zealand immigration and processes",
+          "personalised-support": "Personalised Support",
+          "personalised-support-desc": "We understand that every situation is unique. We offer tailored solutions based on your specific needs",
+          "trusted-partnership": "Trusted Partnership",
+          "trusted-partnership-desc": "We believe in building strong, long-term relationships with our clients",
+          "keep_in_touch": "Keep in touch",
+          "ready_to_begin": "Are you ready to begin your immigration journey?",
+          "contact_now": "Contact Us Now"
+        }
+      },
+      "vi": {
+        "title": "Move2NZ Solutions - Dịch vụ Di trú New Zealand và nhiều hơn nữa",
+        "description": "Dịch vụ visa New Zealand, visa du lịch Úc, tư vấn di trú",
+        "elements": {
+          "immigration": "Di trú và hơn thế nữa",
+          "immigration_desc": "Giải pháp tối ưu cho hành trình đến New Zealand của bạn",
+          "our_services": "Dịch vụ",
+          "explore_services": "Khám phá các dịch vụ đa dạng của chúng tôi",
+          "new_zealand_visas": "Các loại Visa New Zealand",
+          "nz_visas_desc": "Từ visa du học đến visa làm việc, visa định cư và hơn thế nữa, chúng tôi hỗ trợ mọi loại hồ sơ xin visa New Zealand. Các cố vấn di trú được cấp phép của chúng tôi đảm bảo hồ sơ của bạn được xử lý nhanh chóng và chính xác, giúp tăng cơ hội thành công.",
+          "visitor_visas": "Visa du lịch Úc",
+          "visitor_desc": "Bạn dự định đến Úc du lịch? Chúng tôi cung cấp hỗ trợ đáng tin cậy trong việc xin visa du lịch Úc, giúp chuyến đi của bạn trở nên dễ dàng và thuận lợi.",
+          "other_services": "Dịch vụ khác",
+          "other_services_desc": "Hỗ trợ thủ tục xin Hộ chiếu New Zealand, Hỗ trợ thủ tục xin lý lịch tư pháp New Zealand, Hỗ trợ thủ tục đăng ký thành lập doanh nghiệp ở New Zealand",
+          "keen_to_move": "Sẵn sàng lên đường?",
+          "keen_to_move_desc": "Tìm hiểu ngay các lựa chọn di trú đến New Zealand phù hợp nhất cho bạn",
+          "why_choose_us": "Tại sao bạn nên chọn chúng tôi?",
+          "choose_us_desc": "Các cố vấn di trú giàu kinh nghiệm đã được kiểm chứng",
+          "experience-consultants": "Tư vấn nhiều kinh nghiệm",
+          "experience-consultants-desc": "Đội ngũ am hiểu của chúng tôi có nhiều năm kinh nghiệm trong lĩnh vực di trú New Zealand",
+          "personalised-support": "Cá nhân hóa dịch vụ",
+          "personalised-support-desc": "Chúng tôi nhận thức rằng mỗi trường hợp là duy nhất. Chúng tôi cung cấp các giải pháp được điều chỉnh riêng biệt theo nhu cầu cụ thể của bạn.",
+          "trusted-partnership": "Đối tác tin cậy",
+          "trusted-partnership-desc": "Chúng tôi cam kết xây dựng mối quan hệ chặt chẽ và lâu dài với khách hàng",
+          "keep_in_touch": "Liên lạc ngay",
+          "ready_to_begin": "Bạn đã sẵn sàng bắt đầu hành trình di trú của mình chưa? Hãy liên lạc với chúng tôi ngay hôm nay để được tư vấn và hỗ trợ",
+          "contact_now": "Liên lạc với chúng tôi ngay"
+        }
       }
     }
+
+    let currentLanguage = 'en';
+    const langSelect = document.getElementById('languageSelect');
+
+    // Initialize event listeners
+    function initializeListeners() {
+      langSelect.addEventListener('change', handleLanguageChange);
+    }
+
+    // Handle language change event
+    function handleLanguageChange(event) {
+      currentLanguage = event.target.value;
+      updateContent();
+    }
+
+    // Update content on the page based on selected language
+    function updateContent() {
+      const data = langData[currentLanguage];
+
+      if (data) {
+        document.title = data.title;
+        document.querySelector('meta[name="description"]').setAttribute("content", data.description);
+
+        const elements = data.elements;
+
+        // Update each element dynamically using its ID from the JSON
+        for (const [key, value] of Object.entries(elements)) {
+          const element = document.getElementById(key);
+          if (element) {
+            element.innerText = value;
+          }
+          if (key === 'contact_now') {
+            var classElements = document.getElementsByClassName(key);
+            for (var i = 0; i < classElements.length; i++) {
+              classElements[i].innerText = value;
+            }
+          }
+        }
+
+        // Update the copyright text dynamically
+        document.getElementById('copyrightText').innerText = `© ${new Date().getFullYear()} Move2NZ Solutions Ltd. All Rights Reserved.`;
+      }
+    }
+
+    // Initialize the app on document load
+    document.addEventListener('DOMContentLoaded', () => {
+      initializeListeners();
+      updateContent();
+    });
   </script>
 </body>
