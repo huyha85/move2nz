@@ -153,16 +153,6 @@ h1, h2, h3 {
 
 .reverse-section {
   background-color: #EEE2DC;
-  /* color: #fff; */
-}
-
-.reverse-section h1, .reverse-section h2 {
-  /* color: #fff; */
-}
-
-.reverse-section .btn-primary, .reverse-section .btn-primary:active, .reverse-section .btn-primary:focus {
-  /* background-color: #fff;
-  color: #D95C21; */
 }
 
 .link {

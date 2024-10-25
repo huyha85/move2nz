@@ -39,7 +39,7 @@
         <div class="col-12 text-center">
           <h1 id="immigration" class="big-title lato-bold">Immigration and Beyond</h1>
           <h3 id="immigration_desc" class="big-title-description lato-light">Expert Solutions for Your Move to New Zealand</h3>
-          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+          <a class="contact_now btn btn-primary link-phone" onclick="contactNowAction()" href="javascript:void(0);">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
           <p id="other_services_desc" class="para-text">New Zealand Passport Application Support, NZ Police Certificate Assistance, New Zealand Company Registration and others.</p>
         </div>
         <div class="col-12 text-center">
-          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+          <a class="contact_now btn btn-primary link-phone" onclick="contactNowAction()" href="javascript:void(0);">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@
         <div class="col-12 text-center">
           <h1 id="keen_to_move" class="big-title lato-bold">Keen to move?</h1>
           <h3 id="keen_to_move_desc" class="big-title-description lato-light">Find out all your options to migrate to New Zealand</h1>
-          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+            <a class="contact_now btn btn-primary link-phone" onclick="contactNowAction()" href="javascript:void(0);">Contact Us Now</a>
         </div>
       </div>
     </div>
@@ -130,13 +130,13 @@
         <div class="col-12 text-center">
           <h1 id="keep_in_touch" class="big-title lato-bold">Keep in touch</h1>
           <p id="ready_to_begin" class="para-text">Are you ready to begin your immigration journey? Contact us today for a consultation.</p>
-          <a class="contact_now btn btn-primary link-phone" href="tel:+64221209565">Contact Us Now</a>
+          <a class="contact_now btn btn-primary link-phone" onclick="contactNowAction()" href="javascript:void(0);">Contact Us Now</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="footer">
+  <div id="footer" class="footer">
     <div class="container">
       <div class="row">
         <div class="col-6">
@@ -275,6 +275,10 @@
         // Update the copyright text dynamically
         document.getElementById('copyrightText').innerText = `© ${new Date().getFullYear()} Move2NZ Solutions Ltd. All Rights Reserved.`;
       }
+    }
+
+    function contactNowAction() {
+      document.getElementById('footer').scrollIntoView();
     }
 
     // Initialize the app on document load
